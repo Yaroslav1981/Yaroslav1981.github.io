@@ -130,7 +130,7 @@ function update(){
 
 time++
 
-if(time%2 == 0) aster.push({
+if(time%3 == 0) aster.push({
     x: Math.random()*600,
     y:-50,
     speedX: Math.random()*2-1,
@@ -138,10 +138,10 @@ if(time%2 == 0) aster.push({
     del:0,
 });
 
-if(time%2 == 0 ){ 
-    fire.push({x: ship.x , y: ship.y - 30,speedY: 4, speedX :-0.5,});
-    fire.push({x: ship.x +15, y: ship.y - 30,speedY: 4.1, speedX:0, });
-    fire.push({x: ship.x + 30, y: ship.y - 30,speedY: 4,speedX :0.5,});
+if(time%10== 0 ){ 
+    //fire.push({x: ship.x , y: ship.y - 30,speedY: 4, speedX :-0.5,});
+   fire.push({x: ship.x +15, y: ship.y - 30,speedY: 4.1, speedX:0, });
+    //fire.push({x: ship.x + 30, y: ship.y - 30,speedY: 4,speedX :0.5,});
 };
 
 
